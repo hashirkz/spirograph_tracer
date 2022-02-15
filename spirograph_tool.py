@@ -37,7 +37,7 @@ def draw_hypotrochoid(r, R, d):
     upperbound = m.ceil((m.pi * 2 * (lcm(r, R) / R) * 50))
     t.penup()
     
-    # u can change the 0.02 parameter the smaller the value the smoother the curve but it will takek longer to draw
+    # u can change the 0.02 parameter the smaller the value the smoother the curve but it will take longer to draw
     for theta in [x * 0.02 for x in range(upperbound + 1)]:
         x = (R - r) * m.cos(theta) + d * m.cos(((R - r) * theta) / r)
         y = (R - r) * m.sin(theta) - d * m.sin(((R - r) * theta) / r)
